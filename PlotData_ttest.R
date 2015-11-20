@@ -86,7 +86,7 @@ simpleTTfunc(aa1)
 lapply(list, simpleTTfunc)
 
 ## this approach can be elaborated:
-otherTTfunc = function(x){
+otherTTfunc <- function(x){
   p <- t.test(x$Conc~x$response)$p.value  # run the t test and return only the p-value
   m <- tapply(x$Conc, x$response, mean)   # calculate the mean concentration per group
   s <- tapply(x$Conc, x$response, sd)
