@@ -37,3 +37,5 @@ ggplot(df) +
   theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
         axis.text = element_blank(), axis.ticks = element_blank()) + 
   ggtitle("Circle Plot")
+
+# comment as example
